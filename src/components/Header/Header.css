@@ -1,0 +1,45 @@
+/* Header.css */
+header {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #9b059d;
+  padding: 1rem 2rem;
+  color: #fff;
+}
+
+header h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+
+header nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+  color: #00d4ff;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
